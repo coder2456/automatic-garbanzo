@@ -1,0 +1,55 @@
+{
+    "lives": 3,
+    "levels": {
+        "1": {
+            "wordSpeed": 1,
+            "newWordTimeInterval": 2000,
+            "pointsForNextLevel": 5
+        },
+        "2": {
+            "wordSpeed": 2,
+            "newWordTimeInterval": 2000,
+            "pointsForNextLevel": 15
+        },
+        "3": {
+            "wordSpeed": 3,
+            "newWordTimeInterval": 2000,
+            "pointsForNextLevel": 40
+        },
+        "4": {
+            "wordSpeed": 3,
+            "newWordTimeInterval": 1800,
+            "pointsForNextLevel": 60
+        },
+        "5": {
+            "wordSpeed": 4,
+            "newWordTimeInterval": 1800,
+            "pointsForNextLevel": 80
+        },
+        "6": {
+            "wordSpeed": 4,
+            "newWordTimeInterval": 1750,
+            "pointsForNextLevel": 110
+        },
+        "7": {
+            "wordSpeed": 5,
+            "newWordTimeInterval": 1750,
+            "pointsForNextLevel": 140
+        },
+        "8": {
+            "wordSpeed": 5,
+            "newWordTimeInterval": 1700,
+            "pointsForNextLevel": 170
+        },
+        "9": {
+            "wordSpeed": 5,
+            "newWordTimeInterval": 1650,
+            "pointsForNextLevel": 200
+        },
+        "10": {
+            "wordSpeed": 5,
+            "newWordTimeInterval": 1600,
+            "pointsForNextLevel": 240
+        }
+    }
+}

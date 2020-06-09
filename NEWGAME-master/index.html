@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title -->
+    <title>TypeFurios</title>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/index.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- bg image -->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <header class="display-none">
+        <!-- words -->
+        <span id="matched-words-container">Words: <span id="matched-words-count">0</span></span>
+
+        <!-- level -->
+        <span id="level-container">Level: <span id="level">1</span></span>
+
+        <!--hearts -->
+        <span id="hearts-container"></span>
+    </header>
+
+    <!-- canvas -->
+    <div id="words-canvas"></div>
+
+    <!-- container for the word that the user is typing-->
+    <div id="typedWord"></div>
+
+    <!-- menu -->
+    <menu class="center fadeIn">
+        <button class="glow-sm generic-btn" id="play-game-btn">Play game</button>
+        <button class="glow-sm generic-btn" id="instructions-btn">Instructions</button>
+    </menu>
+
+    <!-- instructions -->
+    <div id="instructions-container" class="center-y display-none fadeIn">
+        <div id="instructions-wrapper">
+            <p>Test your typing skills and match as many words as you can</p>
+            <p> <span class="game-hot-key">*Backspace</span>- delete the last letter you typed</p>
+            <p> <span class="game-hot-key">*Escape</span>- delete the whole word</p>
+        </div>
+        <br>
+        <div id="instructions-btns-wrapper">
+            <button class="glow-sm generic-btn" id="instructions-back-btn">Back</button>
+        </div>
+    </div>
+
+    <!-- game over container -->
+    <span id="game-over-container" class="center display-none">
+        <h1 class="glow" id="game-over-text">Game Over</h1>
+        <h1 class="glow">High Score: <span id="high-score"> </span> </h1>
+        <button class="glow-sm generic-btn" id="play-again-btn">Play again</button>
+
+    </span>
+
+
+    <!-- disable right click -->
+    <script>
+
+        /**
+         * * disable right click
+         */
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    <!-- script -->
+    <script src="./script/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,545 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==================================
+  *
+  * General
+  *
+  =================================
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Orbitron", sans-serif;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.generic-btn {
+  font-size: 1.2em;
+  z-index: 10;
+  border-color: #ff4da6;
+  color: #fff;
+  letter-spacing: 1.2px;
+  box-shadow: 0 0 10px #ff4da6;
+}
+
+.display-none {
+  display: none;
+}
+
+.fadeIn {
+  -webkit-animation: fadein 0.5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.5s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.5s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.5s;
+  /* Opera < 12.1 */
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ==================================
+  *
+  * Bg image
+  *
+  =================================
+*/
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url("../images/stars.png") repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url("../images/twinkling.png") repeat top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+/* ==================================
+  *
+  * Words
+  *
+  =================================
+*/
+
+.word {
+  color: green;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  z-index: 9;
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  left: 0;
+  width: auto;
+}
+
+#words-canvas {
+  width: 100%;
+  height: calc(100% - 80px);
+  /*80px hearts container height + typedWord height */
+  position: relative;
+}
+
+/* ==================================
+  *
+  * Typed word
+  *
+  =================================
+*/
+
+#typedWord {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-align: left;
+  color: #fff;
+  z-index: 10;
+  font-size: 18px;
+}
+
+#typedWord > span {
+  border-bottom: 2px solid #fff;
+  margin-right: 2px;
+}
+
+#typedWord > span:last-child {
+  margin-right: 0;
+}
+
+/* ==================================
+  *
+  * Hearts container with user lives, score and level
+  *
+  =================================
+*/
+
+header {
+  position: relative;
+  display: flex;
+  top: 0px;
+  padding: 17px 20px 0 20px;
+  height: 40px;
+  width: 100%;
+  z-index: 10;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+header > * {
+  flex: 1 1 0;
+}
+
+#level-container {
+  text-align: center;
+}
+
+#hearts-container {
+  text-align: right;
+}
+
+#hearts-container img {
+  width: 24px;
+  margin-right: 5px;
+}
+
+#hearts-container img:last-child {
+  margin-right: 0;
+}
+
+/* ==================================
+  *
+  * Glow effect
+  *
+  =================================
+*/
+
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.glow-sm {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow-sm 1s ease-in-out infinite alternate;
+  -moz-animation: glow-sm 1s ease-in-out infinite alternate;
+  animation: glow-sm 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow-sm {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #e60073, 0 0 4px #e60073,
+      0 0 5px #e60073, 0 0 6px #e60073, 0 0 7px #e60073;
+  }
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 3px #ff4da6, 0 0 4px #ff4da6, 0 0 5px #ff4da6,
+      0 0 6px #ff4da6, 0 0 7px #ff4da6, 0 0 8px #ff4da6;
+  }
+}
+
+/* ==================================
+  *
+  * Game over text & btn
+  *
+  =================================
+*/
+
+#game-over-container {
+  z-index: 10;
+  position: absolute;
+  text-align: center;
+}
+
+#game-over-container > button {
+  width: 160px;
+  margin-bottom: 30px;
+  padding: 3px 10px;
+}
+
+#play-again-btn {
+  margin-top: 60px;
+}
+
+#game-over-text {
+  font-size: 4em;
+  margin-bottom: 50px;
+  white-space: nowrap;
+}
+
+/* ==================================
+  *
+  * Navigation
+  *
+  =================================
+*/
+
+menu {
+  z-index: 10;
+}
+
+menu button {
+  padding: 6px 10px;
+  width: 160px;
+  padding: 5px 10px;
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#instructions-container {
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+
+#instructions-wrapper {
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#instructions-wrapper > p {
+  margin-bottom: 15px;
+  color: #ff4da6;
+  font-size: 1.1em;
+}
+
+#instructions-btns-wrapper > button {
+  padding: 5px 10px;
+}
+
+.game-hot-key {
+  font-weight: 700;
+}
